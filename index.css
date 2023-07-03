@@ -1,0 +1,115 @@
+@import url('https://fonts.cdnfonts.com/css/karla');
+@import url('https://fonts.cdnfonts.com/css/inter');
+
+:root {
+    --background: #1c1c1c;
+    --night-light: #273549;
+    --night: #1F2937;
+    --green: #10B981;
+    --greenPassword: #55F991;
+    --light: #ECFDF5;
+}
+body {
+    margin: 0;
+    background-color: var(--background);
+    color: var(--light);
+    font-family: 'Karla', sans-serif;
+}
+.theme-button {
+    background-color: var(--green);
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin: 10px 0;
+    color: var(--night);
+    font-family: 'Inter', sans-serif;
+    cursor: pointer;
+    transition: 0.3s;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+}
+.theme-button:active {
+    background-color: var(--greenPassword);
+}
+.divisor {
+    border: 1px solid var(--night-light);
+    
+}
+.container {
+    position: relative;
+    width: 50%;
+    height: auto;
+    padding: 40px 50px;
+    margin: 10% auto;
+    background-color: var(--night);
+    color: var(--light);
+    border-radius: 8px;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+    transition: 0.3s;
+}
+.light {
+    background-color: var(--light);
+    color: var(--night);
+}
+.title {
+    font-size: 3rem;
+    font-weight: 800;
+}
+.title-span {
+    color: var(--green);
+}
+.paragraph {
+    font-family: 'Inter', sans-serif;
+                                                
+}
+.button {
+    background-color: var(--green);
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+    color: var(--light);
+    font-family: 'Inter', sans-serif;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+}
+.button:hover {
+    background-color: var(--greenPassword);
+    color: var(--night-light);
+}
+.button:active {
+    background-color: var(--greenPassword);
+    color: var(--green);
+}
+.password-container {
+    display: flex;
+    gap: 20px;
+}
+.password {
+    background-color: var(--night-light);
+    color: var(--greenPassword);
+    width: 200px;
+    height: 15px;
+    border-radius: 6px;
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+    padding: 10px;
+    text-align: center;
+}
+.repo-link {
+    position: absolute;
+    right: 20px;
+    bottom: 15px;
+    text-decoration: none;
+    color: var(--green);
+    cursor: pointer;
+    transition: 0.3s;
+}
+.repo-light {
+    color: var(--night);
+}
+.repo-link:hover {
+    color: var(--greenPassword);
+}
